@@ -1,0 +1,83 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  justify-items: center;
+}
+
+h1,
+.listaProductos {
+  margin: 10px 0;
+  grid-column-start: span 2;
+}
+
+.divForm {
+  width: 400px;
+  height: 320px;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 30px;
+}
+
+.formMensajes {
+  display: flex;
+}
+
+.noStock {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#mensajes {
+  display: flex;
+  border: 1px solid;
+  flex-direction: column;
+  align-items: center;
+  height: 220px;
+  overflow-y: scroll;
+}
+
+.mensaje {
+  display: flex;
+  font-size: 20px;
+}
+
+strong {
+  color: blue;
+  margin-right: 5px;
+}
+p {
+  color: brown;
+  margin-right: 10px;
+}
+
+em {
+  color: green;
+}
+
+.listaProductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 280px;
+  padding: 20px;
+  margin-bottom: 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.tablaProductos {
+  width: 500px;
+}

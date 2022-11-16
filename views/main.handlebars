@@ -1,0 +1,45 @@
+<div class="divForm">
+  <h2>Cargar productos</h2>
+  <form onsubmit="return agregarProducto(this)">
+    <label class="form-label">Nombre</label>
+    <input type="text" class="form-control" name="title" id="inputTitle" />
+    <label class="form-label">Precio</label>
+    <input type="number" class="form-control" name="price" id="inputPrice" />
+    <label class="form-label">Imagen</label>
+    <input
+      type="text"
+      class="form-control mb-2"
+      name="thumbnail"
+      id="inputThumbnail"
+    />
+    <button type="submit" class="btn btn-dark mb-3">Cargar producto</button>
+  </form>
+</div>
+
+<div>
+  <h2>Centro de mensajes</h2>
+  <div id="mensajes">
+
+  </div>
+  <form onsubmit="return agregarMensajes(this)" class="formMensajes">
+    <input
+      type="email"
+      class="form-control mt-3 me-2"
+      id="email"
+      placeholder="Escriba su email"
+    />
+    <input
+      type="text"
+      class="form-control mt-3 me-2"
+      id="texto"
+      placeholder="Escriba el mensaje"
+    />
+    <input type="submit" class="btn btn-success mt-3" value="Enviar mensaje" />
+  </form>
+</div>
+
+<div class="listaProductos">
+  <h2>Vista de productos</h2>
+  <div id="tablaProductos">
+  </div>
+</div>
